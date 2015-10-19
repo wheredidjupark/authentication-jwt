@@ -3,5 +3,5 @@
 angular.module('psJWTApp')
   .controller('HeaderController', function ($scope, authToken) {
 
-  	$scope.isAuthenticated = authToken.isAuthenticated;
+  	$scope.isAuthenticated = authToken.isAuthenticated();
   });

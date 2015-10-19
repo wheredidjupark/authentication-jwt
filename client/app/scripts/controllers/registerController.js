@@ -18,8 +18,9 @@
             console.log("you are attempting to submit a registration form with following email: ", user.email);
             $http.post(url, user).then(function(response) {
                 alert('Success', 'OK!', 'You are now registered');
-                authToken.setToken(response.token);
-
+                authToken.setToken(response.data.token);
+                console.log("token in our response:", response.data.token);
+                console.log("token in our local storage:", window.localStorage.getItem("userToken"));
             }, function(error) {
                 alert('warning', 'Error', error.data);
             });
