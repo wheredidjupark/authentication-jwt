@@ -1,5 +1,5 @@
 {
-  "name": "creating-apps-with-angular-node-and-token-authentication",
+  "name": "psJWTApp",
   "version": "0.0.0",
   "dependencies": {
     "angular": "^1.3.0",
@@ -11,7 +11,7 @@
     "angular-mocks": "^1.3.0"
   },
   "appPath": "app",
-  "moduleName": "creatingAppsWithAngularNodeAndTokenAuthenticationApp",
+  "moduleName": "psJWTApp",
   "overrides": {
     "bootstrap": {
       "main": [
