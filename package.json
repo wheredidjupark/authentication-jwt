@@ -1,0 +1,21 @@
+{
+  "name": "ps-authentication",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ju Park",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^0.8.5",
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.14.1",
+    "crypto": "0.0.3",
+    "express": "^4.13.3",
+    "mocha": "^2.3.3",
+    "mongoose": "^4.1.10",
+    "should": "^7.1.0"
+  }
+}

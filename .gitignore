@@ -1,0 +1,8 @@
+node_modules
+/dist
+/.tmp
+/.sass-cache
+bower_components
+creating-apps-angular-node-token-authentication.zip
+creating-apps-angular-node-token-authentication
+test
