@@ -5,7 +5,7 @@ var app = express();
 var bodyParser = require('body-parser');
 var mongoose = require("mongoose");
 var UserModel = require("./userAuthModel.js");
-var jwt = require("./jwt");
+var jwt = require("./jwt.js");
 
 
 mongoose.connect("mongodb://localhost/test2");
@@ -58,6 +58,7 @@ app.post('/register', function(req, res) {
 
 });
 
+console.log(jwt.encode("hi","secret"));
 var server = app.listen(8181, function() {
     console.log("listening on port", server.address().port);
 });
