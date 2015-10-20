@@ -15,6 +15,10 @@
 			url: '/',
 			templateUrl: '/views/main.html',
 			controller: 'MainController'
+		})
+		.state("logout", {
+			url: "/logout",
+			controller: "LogoutController"
 		});
 
 	});
