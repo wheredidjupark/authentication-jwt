@@ -35,7 +35,7 @@ app.post('/register', function(req, res) {
 
     var payload = {
         iss: req.hostname,
-        sub: user._id
+        sub: newUser.id
     };
 
     var token = jwt.encode(payload, "shhh....");
@@ -45,11 +45,12 @@ app.post('/register', function(req, res) {
             throw err;
         }
 
+/*
         UserModel.findOne({email: user.email}, function(err, foundUser){
             if(err){throw err;}
             console.log("After save (in database): ", foundUser);  
         });
-
+*/
         res.status(200).send({
             user: newUser.toJSON(),
             token: token
